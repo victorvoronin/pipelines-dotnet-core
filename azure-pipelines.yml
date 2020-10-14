@@ -17,9 +17,10 @@ variables:
 
 steps:
   - task: Bash@3
-    displayName: "Merge to specsync branch"
+    displayName: "Show variables"
     inputs:
       targetType: 'inline'
       script: |
-        echo "$(Build.SourcesDirectory)"
+        echo "Build.SourcesDirectory - $(Build.SourcesDirectory)"
+        echo "Agent.BuildDirectory - $(Agent.BuildDirectory)"
     
