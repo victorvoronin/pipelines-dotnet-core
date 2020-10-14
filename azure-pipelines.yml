@@ -23,4 +23,7 @@ steps:
       script: |
         echo "Build.SourcesDirectory - $(Build.SourcesDirectory)"
         echo "Agent.BuildDirectory - $(Agent.BuildDirectory)"
+        echo "Build.BinariesDirectory - $(Build.BinariesDirectory)"
+        echo "Build.ArtifactStagingDirectory - $(Build.ArtifactStagingDirectory)"
+        echo "Common.TestResultsDirectory - $(Common.TestResultsDirectory)"
     
